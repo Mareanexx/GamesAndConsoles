@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;
+	700;800;900&family=Montserrat:wght@200&family=PT+Sans&family=Poppins:wght@300;400;500;600;
+	700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;
+	800;900&family=Stalinist+One&family=Tektur&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<title>Games & Consoles: Cart</title>
+
+	<!--for css styles-->
+	<link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/footer.css">
+	<!--GSAP lib-->
+	<script src="/libs/gsap/gsap.min.js" defer></script>
+	<script src="/libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="/libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+	<script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
+	<script src="/js/cart.js" defer></script>
+    
+
+</head>
+
+<body>
+    <header class="header_cart">
+        <div class="container__navbar">
+            <p>
+                Games <i class="fa fa-gamepad" aria-hidden="true"></i> Consoles
+            </p>
+            <nav class="navbar">
+                <a href="index.html">Главная</a>
+                <a href="reviews.html">Отзывы покупателей</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="cart.html">Корзина</a>
+            </nav>
+        </div>
+        
+        <div class="menu-burger">
+            <span></span>
+        </div>
+        
+        <nav class="nav_menu-burger">
+            <ul class="main_menu-burger">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+            </ul>
+            
+            <div class="menu-burger_about">
+                <p>Исследуйте мир игр с лучшими игровыми приставками – наслаждайтесь захватывающими приключениями и непревзойденной графикой прямо у себя дома!</p>
+            </div>
+                
+            <div class="menu-burger_social">
+                <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            </div>
+                
+            <ul class="menu-burger_sub">
+                <li><a href="#0">Games &amp; Consoles</a></li>
+                <li><a href="#0">Rent Now!</a></li>
+            </ul>
+        </nav>
+        
+        <div class="overlay"></div>
+
+    </header>
+
+
+
+    <section class="wrap">
+        <form class="common_form need_check_form cart_list_form" id="cart_list_form" autocomplete="off">
+
+            <div class="order-cart__header">
+                <h1 class="title-dotted page__title">
+                    <span>Моя корзина <mark class="order-cart__qty cart_amount">0</mark>
+                    </span>
+                </h1>
+            </div>
+
+            <div class="full_cart_wrapper">
+
+                <div class="order-cart__list">
+                    <div class="order-list order_list_wrapper">
+                        <div class="order-list__date cart_date_wrapper">
+
+                            <div class="order-list__row cart_item_list_wrapper">
+
+                                <!-- <div class="order-list__i">
+                                    <div class="order-list__i-imgbox">
+                                        <div class="order-list__i-img">
+                                            <img src="/img/starfield.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="order-list__i-content">
+
+                                        <div class="order-list__i-namebox">
+                                            <div class="order-list__i-type">
+                                                Аренда
+                                            </div>
+                                            <span class="order-list__i-name">
+                                                Игровая приставка Sony PlayStation 4 Slim + подписка Deluxe (400 игр)
+                                            </span>
+                                        </div>
+
+                                        <div class="order-list__i-info">
+                                            <div class="order-list__i-available">
+                                                <span class="order-list__i-available-text">
+                                                    Начало аренды
+                                                </span>
+                                                <div class="order-list__i-date">
+                                                    <div class="date-wrapper order-list__datepicker">
+                                                        <div class="datepicker">
+                                                            <input class="datepicker__data" type="date" id="date_begin"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="order-list__i-available-text">
+                                                    Конец аренды
+                                                </span>
+                                                <div class="order-list__i-date">
+                                                    <div class="date-wrapper order-list__datepicker">
+                                                        <div class="datepicker">
+                                                            <input class="datepicker__data" type="date" id="date_end"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                            
+    
+                                            <div class="order-list__i-price" style="height: 127.739px;">
+                                                <div class="order-list__i-price-total products_sum_format">
+                                                    <span class="product_sum">3960</span>
+                                                    <span class="rub"><i class="fa fa-rub" aria-hidden="true"></i></span>
+                                                </div>
+                                                <div class="order-list__i-price-day">
+                                                    <strong class="first_price_format">
+                                                        <span class="rent_price_in_days">304</span>
+                                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                                    </strong>
+                                                        / сутки
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="order-list__i-del">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div> -->
+
+
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-contact">
+                    <div class="order-contact__main">
+                        <div class="order-contact__title">
+                            <div class="order-contact__title-main">
+                                <span class="order-contact__title-num"></span>
+                                <h2 class="no_company_contact1">Укажите ваши контакты</h2>
+                            </div>
+                        </div>
+
+                        <div class="order-contact__user">
+        
+                            <div class="order-contact__user-contact">
+
+                                <div class="order-contact__user-phone">
+                                    <div class="inputbox phonecode phone_block_wrapper">
+                                        <label for="phoneInput">Мобильный телефон <strong>*</strong></label>
+                                        <div class="phonecode__phone from_cart">
+                                            <div class="inputbox__field phone_field_wrapper">
+                                                <input id="phoneInput" class="inputbox__input" autocomplete="off" placeholder="+7(___) ___-__-__" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="order-contact__user-email">
+                                    <div class="inputbox">
+                                        <label for="EmailInput">E-mail <strong>*</strong></label>
+                                        <div>
+                                            <div class="inputbox__field">
+                                                <input id="EmailInput" class="email inputbox__input" name="profile[email]" type="email" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="order-contact__user-fio">
+                                <div class="inputbox">
+                                    <label for="FIO">ФИО <strong>*</strong></label>
+                                    <div class="inputbox__field">
+                                        <input id="FIO" class="inputbox__input" type="text" placeholder="Фамилия" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;" required>
+                                    </div>
+                                    <div class="inputbox__field">
+                                        <input id="FIO" class="inputbox__input" type="text" placeholder="Имя" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;" required>
+                                    </div>
+                                    <div class="inputbox__field">
+                                        <input id="FIO" class="inputbox__input" type="text" placeholder="Отчество" 1="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                            
+                                                            
+                        <div class="order-contact__title">
+                            <div class="order-contact__title-main">
+                                <span class="order-contact__title-num"></span>
+                                <h2>Выберите способ доставки</h2>
+                            </div>
+                        </div>
+        
+                        <div class="js-checkout-tabs">
+                            <div class="order-contact__delivery-nav delivery_tabs_wrapper">
+                                <div class="order-contact__delivery-row">
+                                    <label class="checkout-radio">
+                                        <input class="checkout-radio__input" type="radio" name="checkout-delivery" checked="">
+                                        <div class="checkout-radio__value" id="delivery_choice_myself">
+                                            <div class="checkout-radio__value-name">Самовывоз в пункте выдачи</div>
+                                            <div class="checkout-radio__pricebox">
+                                                <span class="checkout-radio__pricebox-text">Забрать сегодня</span>
+                                                <span class="checkout-radio__pricebox-price">Бесплатно</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="checkout-radio">
+                                        <input class="checkout-radio__input" type="radio" name="checkout-delivery">
+                                        <div class="checkout-radio__value" id="delivery_choice_curier">
+                                            <div class="checkout-radio__value-name">Доставка курьером</div>
+                                            <div class="checkout-radio__pricebox">
+                                                <span class="checkout-radio__pricebox-text">Доставим завтра</span>
+                                                <span class="checkout-radio__pricebox-price">
+                                                    от 349 ₽
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-contact__title" style="margin-top: 50px;">
+                            <div class="order-contact__title-main">
+                                <span class="order-contact__title-num"></span>
+                                <h2>Выберите тип оплаты</h2>
+                            </div>
+                        </div>
+        
+                        <div class="order-contact__pay no_company_contact">
+                            <div class="order-contact__radio-row">
+                                <label class="checkout-radio">
+                                    <input class="order-contact__pay-radio" type="radio" name="order" value="0" checked="">
+                                    <div class="order-contact__pay-value">
+                                        <div class="order-contact__pay-name">Оплата картой на сайте онлайн</div>
+                                    </div>
+                                </label>
+                                
+                                <label class="checkout-radio">
+                                    <input class="order-contact__pay-radio" type="radio" name="order" value="1">
+                                    <div class="order-contact__pay-value">
+                                        <div class="order-contact__pay-name">
+                                            <span class="with_delivery payment_type_descr nod">Оплата картой курьеру при получении</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+        
+        
+                    <div class="order-contact__submit" style="position: relative;">
+                        <div class="order-contact__submit-in">
+        
+                            <div class="order-contact__checkout">
+                                <div class="order-contact__checkout-row">
+                                    <div class="order-contact__checkout-label">Товары</div>
+                                    <div class="order-contact__checkout-sum old_sum"><span class="final_sum_torent">0</span>
+                                        <span>₽</span>
+                                    </div>
+                                </div>
+        
+                                <div class="order-contact__checkout-row">
+                                    <div class="order-contact__checkout-label">Доставка</div>
+                                    <div class="order-contact__checkout-sum delivery_sum">Бесплатно</div>
+                                </div>
+        
+                                <div class="order-contact__promocode promocode_wrapper no_first_show">
+                                    <div class="inputbox-row">
+                                        <div class="inputbox">
+                                            <label>Промокод</label>
+                                            <div class="inputbox__field">
+                                                <input name="order[promocode]" value="" class="check_field promocode_field inputbox__input inputbox__input--wide add_field" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="inputbox inputbox--btn">
+                                            <a href="" class="btn_prim btn--simple btn--wide">
+                                                <span>Применить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="order-contact__total-sum all_sum_wrapper">
+                                    <div class="order-contact__total-sum-label">Итого</div>
+                                    <div class="order-contact__total-sum-num cart_all_sum"><span class="final_sum_torent_2">0</span>
+                                        <span>₽</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+        
+                        <button class="order-btn btn--wide btn--yellow" type="submit">
+                                <span>оформить заказ</span>
+                                <div class="btn__icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-info">
+                <div class="box-info">
+                    <img class="footer-img" src="/img/xbox-for-footer.png">
+                    <p class="footer-info-text">
+                        Исследуйте мир игр с лучшими игровыми приставками – наслаждайтесь захватывающими приключениями и непревзойденной графикой прямо у себя дома!
+                    </p>
+                    <div class="footer-social-link">
+                        <h3>Follow us</h3>
+                        <ul style="list-style: none;" class="ul-footer-links">
+                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contact-us">
+                <i class="fa fa-map-o" aria-hidden="true"></i>
+                <div class="contact-info">
+                    <h3>Москва, Россия</h3>
+                    <p>пр-кт Мичуринский, 12к2</p>
+                </div>
+            </div>
+
+            <div class="footer-call-us">
+                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+                    <p>8 (981)-551-08-23</p>
+                </div>
+            </div>
+
+            <div class="footer-useful-links">
+                <h3>Ссылки</h3>
+                <span class="animate-border border-black"></span>
+                <div class="useful-links">
+                    <ul style="list-style: none;" class="ul-useful-links">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Корзина</a></li>
+                    </ul>
+                    <ul style="list-style: none;">
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-subscribe">
+                <h3>Подпишись</h3>
+                <span class="animate-border border-black"></span>
+                <p>
+                    Подписывайся на наши новости, обновления, пополнения каталога и акции!
+                </p>
+                <div>
+                    <input type="email" class="form-control" placeholder="Email Address">
+                    <button type="submit" class="button-control">
+                        <i class="fa fa-send"></i>
+                    </button>
+                </div>
+            </div>
+        </div>  
+
+        <div class="copyright">
+
+            <div class="container-copyright">
+                <span>Copyright © 2023, Все права защищены ООО «Mareanexx»</span>
+                <ul class="ul-copyright">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
