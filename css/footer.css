@@ -1,0 +1,368 @@
+.footer {
+	margin-top: 60px;
+}
+
+.container-footer {
+    margin: 0px 100px 0px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40% 60%;
+    grid-template-areas: 
+        "logo-follow our-place call-us"
+        "logo-follow useful-links subscribe";
+}
+
+.footer-header {
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+}
+
+.footer-header h1 {
+    font-size: 35px;
+    color: white;
+}
+
+.footer-info {
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    grid-area: logo-follow;
+    padding: 40px;
+}
+
+img.footer-img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-info-text {
+    text-align: center;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat' !important;
+    font-size: 15px;
+	line-height: 20px;
+    margin: 0px 0 32px;
+}
+
+.box-info {
+	width: 100%;
+    height: fit-content;
+}
+
+
+.footer-social-link a i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.2);
+    transition: all 0.5s ease;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.footer-social-link a:hover i {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.ul-footer-links {
+	width: 100%;
+	padding-left: 0px;
+    justify-content: space-evenly;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.ul-footer-links a {
+    text-decoration: none;
+}
+
+.footer-social-link h3 {
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.footer-contact-us {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    grid-area: our-place;
+}
+
+.footer-contact-us i,
+.footer-call-us i {
+    margin-right: 20px;
+    font-size: 40px;
+    color: #9966CC;
+}
+
+.contact-info h3 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.footer-call-us {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    grid-area: call-us;
+}
+
+.footer-useful-links {
+    display: flex;
+    flex-direction: column;
+    grid-area: useful-links;
+}
+
+.footer-useful-links h3 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    width: fit-content;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    align-self: center;
+}
+
+.useful-links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.useful-links a {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 17px;
+    color: #878787;
+    text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+.useful-links a:hover {
+	color: white;
+}
+
+.useful-links li {
+    margin-bottom: 15px;
+}
+
+
+.footer-subscribe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: subscribe;
+}
+
+.footer-subscribe h3 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: 'Montserrat';
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: white;
+}
+
+.footer-subscribe p {
+    font-weight: 300;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 27px;
+    font-family: 'Montserrat' !important;
+    color: white;
+    font-size: 15px;
+}
+
+input.form-control {
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+}
+
+button.button-control {
+    margin-left: -30px;
+    padding: 14px 24px 14px 17px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid #9966CC;
+    background: #9966CC;
+    color: #fff;
+}
+
+.copyright {
+    padding: 28px 100px;
+    margin-top: 55px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.copyright span {
+    font-family: 'Montserrat';
+    color: #878787;
+}
+
+.container-copyright {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.ul-copyright {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.ul-copyright a {
+    font-family: 'Montserrat';
+    color: #878787;
+    text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+.ul-copyright a:hover {
+	color: white;
+}
+
+.animate-border {
+    align-self: center;
+    margin-bottom: 30px;
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 3px;
+    background: #9966CC;
+}
+
+
+
+/*media for footer */
+@media screen and (min-width:800px) and (max-width: 1057px) {
+	.container-footer {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 40% 44% 16%;
+		grid-template-areas: 
+			"logo-follow useful-links"
+			"logo-follow subscribe"
+			"our-place call-us";
+	}
+
+}
+  
+@media screen and (max-width: 800px) and (min-width: 320px) {
+	.footer-subscribe {
+		margin-top: 10px;
+	}
+	
+	.footer-contact-us {
+		max-height: 50px;
+		margin-top: 10px;
+	}
+	.footer-call-us {
+		max-height: 50px;
+		margin-top: 10px;
+	}
+
+	.footer-useful-links {
+		margin-top: 15px;
+	}
+
+	img.footer-img {
+		display: none;
+	}
+
+	.footer-info {
+		padding: 20px;
+		min-width: 270px;
+		align-self: center;
+		justify-self: center;
+		width: 60%;
+	}
+
+	.footer-social-link h3 {
+		font-size: 16px;
+	}
+
+	.footer-useful-links h3 {
+		font-size: 16px;
+	}
+
+	.footer-subscribe h3 {
+		font-size: 16px;
+	}
+
+	.footer-info-text {
+		display: none;
+	}
+
+	/* .animate-border {
+		display: none;
+	} */
+
+	.useful-links a {
+		font-size: 13px;
+	}
+
+	.footer-subscribe p {
+		font-size: 12px;
+		margin-bottom: 15px;
+	}
+
+	.footer-contact-us i, .footer-call-us i {
+		font-size: 24px;
+	}
+
+	.contact-info p {
+		font-size: 13px;
+	}
+
+	.contact-info h3 {
+		font-size: 16px;
+	}
+
+	.footer {
+		margin-top: 30px;
+	}
+
+	.container-footer {
+		margin: 0px 20px 0px 20px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.8fr 0.3fr 0.3fr 1fr 1fr;
+		grid-template-areas: 
+			"logo-follow"
+			"our-place"
+			"call-us"
+			"useful-links"
+			"subscribe";
+	}
+
+	.copyright {
+		display: none;
+	}
+}

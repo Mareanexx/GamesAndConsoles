@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;
+	700;800;900&family=Montserrat:wght@200&family=PT+Sans&family=Poppins:wght@300;400;500;600;
+	700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;
+	800;900&family=Stalinist+One&family=Tektur&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<title>Games & Consoles: Rent</title>
+
+	<!--for css styles-->
+	<link rel="stylesheet" href="css/catalogStyle.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menuBurger.css">
+
+	<!--GSAP lib-->
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+	<script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
+	<script src="js/menuBurger.js" defer></script>
+	<script src="js/catalogjs.js" defer></script>
+    
+
+</head>
+
+<body>
+    <header class="header_catalog">
+
+        <div class="container__navbar">
+            <p>
+                Арендуй сейчас!
+            </p>
+            <nav class="navbar">
+                <a href="index.html">Главная</a>
+                <a href="reviews.html">Отзывы покупателей</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="cart.html">Корзина</a>
+            </nav>
+        </div>
+
+        <div class="menu-burger">
+            <span></span>
+        </div>
+        
+        <nav class="nav_menu-burger">
+            <ul class="main_menu-burger">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+            </ul>
+            
+            <div class="menu-burger_about">
+                <p>Исследуйте мир игр с лучшими игровыми приставками – наслаждайтесь захватывающими приключениями и непревзойденной графикой прямо у себя дома!</p>
+            </div>
+                
+            <div class="menu-burger_social">
+                <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            </div>
+                
+            <ul class="menu-burger_sub">
+                <li><a href="#0">Games &amp; Consoles</a></li>
+                <li><a href="#0">Rent Now!</a></li>
+            </ul>
+        </nav>
+        
+        <div class="overlay"></div>
+
+
+        <div class="header_content">
+            <div class="text_header_content">
+                <span>Games & Consoles</span>
+                <h2>Rent Now!</h2>
+                <p>
+                    Выбирайте игровую приставку, игры и арендуйте с бесплатной доставкой до дома.
+                </p>
+                <button class="header_catalog_btn">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="main_catalog">
+        <div class="main_catalog_wrapper">
+
+            <div class="main_catalog_title">
+                <h2>
+                    Games & Consoles
+                </h2>
+            </div>
+
+            <div class="sorting_filter_btns">
+                <div class="btn_sorter">
+                    <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+                    <select name="sorter">
+                        <option value="default">По умолчанию</option>
+                        <option value="price-up">По возрастанию цены</option>
+                        <option value="price-down">По убыванию цены</option>
+                    </select>
+                </div>
+    
+                <div class="btn_filter">
+                    <i class="fa fa-filter" aria-hidden="true"></i>
+                    <select name="filter">
+                        <option value="default">По умолчанию</option>
+                        <option value="only-consoles">Только приставки</option>
+                        <option value="only-games">Только игры</option>
+                    </select>
+    
+                </div>
+            </div>
+
+            <div class="catalog_choose_gandc">
+
+                <div class="product_card" data-tag="console" data-price="539"> <!--PS 5-->
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_hit">
+                                <span><i class="fa fa-star" aria-hidden="true"></i> Хит </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/595/560_280_140cd750bba9870f18aada2478b24840a/59572d7739fb2caf502f611fcd5acb0f.jpeg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/014/560_280_140cd750bba9870f18aada2478b24840a/01424b36c3a33a6beb758812e6f4a079.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игровая приставка Sony PlayStation 5
+                        </div>
+                        <div class="product_card-text">
+                            Открывает новые игровые возможности, о которых вы даже не могли мечтать.
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        539
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        12936
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(1)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div> <!--PS 5-->
+
+                
+                <div class="product_card" data-tag="game" data-price="93">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_new">
+                                <span>
+                                    Новинка
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/b5c/560_280_140cd750bba9870f18aada2478b24840a/543k3pa9wbf75f84qne93c1uq75erbjf.jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/d7c/560_280_140cd750bba9870f18aada2478b24840a/xvh8ao2ubjzcne3at6j3jpg86c2bm23x.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для Sony PS5 MARVEL Spider-Man 2
+                        </div>
+                        <div class="product_card-text">
+                            Люди-пауки, Питер Паркер и Майлз Моралес, возвращаются в новом впечатляющем приключении полюбившейся критикам франшизы «MARVEL Человек-паук» для PS5.
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        93
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        2232
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(2)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="console" data-price="597"> <!--Steam deck-->
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_new">
+                                <span>
+                                    Новинка
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/7fd/560_280_140cd750bba9870f18aada2478b24840a/7fd9d8781c18cf2175d9980e39e798e7.png">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/36f/560_280_140cd750bba9870f18aada2478b24840a/36f1d7fc720b6d0bf6a935b006c38c38.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игровая приставка Valve Steam Deck
+                        </div>
+                        <div class="product_card-text">
+                            Многофункциональный портативный игровой компьютер
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        597
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        14328
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(3)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>  <!--Steam deck-->
+                
+
+                <div class="product_card" data-tag="console" data-price="438"> <!--Nintendo Switch-->
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_hit">
+                                <span><i class="fa fa-star" aria-hidden="true"></i> Хит </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/98d/560_280_140cd750bba9870f18aada2478b24840a/98dac7abdd6b8c151182e159fce98832.jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/644/560_280_140cd750bba9870f18aada2478b24840a/644c011556037694b5965256be89ad71.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игровая приставка Nintendo Switch OLED Model, синий + красный
+                        </div>
+                        <div class="product_card-text">
+                            Красочный 7-дюймовый OLED-экран с глубокими цветами
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        438
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        10512
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(4)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="console" data-price="965">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_new" style="background-color: red;">
+                                <span>
+                                    <i class="fa fa-bolt" aria-hidden="true" style="margin-right: 4px;"></i> Горячая новинка
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/a66/560_280_140cd750bba9870f18aada2478b24840a/wtmtdh40urm1h3sd3e342v0aid733l4m.jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/962/560_280_140cd750bba9870f18aada2478b24840a/iuh61ehevdvalqrlq2y3mre1d12gvb4v.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Гарнитура виртуальной реальности Sony PlayStation VR2
+                        </div>
+                        <div class="product_card-text">
+                            Откройте новые возможности интерфейса PS VR2
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        965
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        23160
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(5)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="game" data-price="76">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_new">
+                                <span>
+                                    Новинка
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/57b/560_280_140cd750bba9870f18aada2478b24840a/o6f8yl9zqba5r1561bil2c07ahkfyqg7.jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/c4c/560_280_140cd750bba9870f18aada2478b24840a/1cj8jh7mgivhcft7k9nenslffflr7kja.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для PS5 Stray
+                        </div>
+                        <div class="product_card-text">
+                            Stray – приключенческая игра от третьего лица, действие которой разворачивается на неоновых улочках и в угрюмых, грязных подворотнях гибнущего кибергорода.‎
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        76
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        1824
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(6)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product_card" data-tag="game" data-price="82">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_new">
+                                <span>
+                                    Новинка
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/680/560_280_140cd750bba9870f18aada2478b24840a/a4lt486qniquuls10j39dhpum7w8a3dj.jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/eeb/560_280_140cd750bba9870f18aada2478b24840a/05b37vj4gsy05supzz6qjyli7vsoq83t.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для PS5 Mortal Combat 1
+                        </div>
+                        <div class="product_card-text">
+                            Откройте возрожденную вселенную Mortal Kombat, которую создал Бог огня Лю Кан. Mortal Kombat™ 1 провозглашает новую эру культовой франшизы с новой боевой системой, игровыми режимами и фаталити!
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        82
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        1968
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(7)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="game" data-price="41">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_new">
+                                <span>
+                                    Новинка
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/314/560_280_140cd750bba9870f18aada2478b24840a/7g2rh160l7bw9seb57ua0946mqjqek7k.jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/1d6/560_280_140cd750bba9870f18aada2478b24840a/jhkvwnsj09uc3u909r9mwvtc4ugyieil.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для Nintendo Switch Super Mario Odyssey
+                        </div>
+                        <div class="product_card-text">
+                            Присоединяйся к путешествию Марио и его приятеля Кэппи в новой трехмерной приключенческой игре
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        41
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        984
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(8)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="game" data-price="69">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_new">
+                                <span>
+                                    Новинка
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/cc3/560_280_140cd750bba9870f18aada2478b24840a/cc380def518162c291a3a54ea40d1dd2.jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/314/560_280_140cd750bba9870f18aada2478b24840a/314d7058297828b7afd589f88a1c0376.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для Sony PS5 Demon's Souls
+                        </div>
+                        <div class="product_card-text">
+                            Полностью переработанный ремейк легендарной игры. Пугающий сюжет и яростные схватки снова ждут вас!
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        69
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        1656
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(9)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="game" data-price="25">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_hit">
+                                <span><i class="fa fa-star" aria-hidden="true"></i> Хит </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/60c/560_280_140cd750bba9870f18aada2478b24840a/hm21l56t0zrasm17rtzklz5b748ytv82.jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/fc7/560_280_140cd750bba9870f18aada2478b24840a/5ushgtkobs1lwvdq2v2xvve7r0oqj7mc.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для Sony PS5 Grand Theft Auto V
+                        </div>
+                        <div class="product_card-text">
+                            Окунитесь в популярные хиты Grand Theft Auto V и GTA Online с улучшениями для PlayStation 5
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        25
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        600
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(10)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="game" data-price="28">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_hit">
+                                <span><i class="fa fa-star" aria-hidden="true"></i> Хит </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/dde/560_280_140cd750bba9870f18aada2478b24840a/uvpitpp78gqvqk2fhpekvtxkvo88sijr.jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/c67/560_280_140cd750bba9870f18aada2478b24840a/2rw1q421f9gqc1swbn8paues1l24p61t.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для Sony PS5 Ведьмак 3: Дикая охота
+                        </div>
+                        <div class="product_card-text">
+                            Вы — Геральт из Ривии, наёмный убийца чудовищ.
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        28
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        672
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(11)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="console" data-price="873">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_hit">
+                                <span><i class="fa fa-star" aria-hidden="true"></i> Хит </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="img/catalog/xboxseriesx(2).jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="img/catalog/xboxseriesx(1).jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игровая приставка Microsoft Xbox Series X
+                        </div>
+                        <div class="product_card-text">
+                            Откройте для себя Xbox Series X — самую быструю и мощную консоль Xbox в истории.
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        873
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        20952
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(12)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="game" data-price="55">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_new">
+                                <span>
+                                    Новинка
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/101/560_280_140cd750bba9870f18aada2478b24840a/101dbbbc09666401db64094b83dfe188.png">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/cba/560_280_140cd750bba9870f18aada2478b24840a/cbade945ae8e29058d43806c195db560.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для Nintendo Switch Sonic Frontiers
+                        </div>
+                        <div class="product_card-text">
+                            Откройте новые миры вместе с шустрым ёжиком Соником, который отправляется на поиски пропавших Изумрудов Хаоса и попадает на древний остров, населённый причудливыми существами.
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        55
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        1320
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(13)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="game" data-price="110">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_new">
+                                <span>
+                                    Новинка
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/b08/560_280_140cd750bba9870f18aada2478b24840a/b08ade37e45954ac514e255fbe4ba4d1.png">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/5ea/560_280_140cd750bba9870f18aada2478b24840a/5ea8319267ef0aa17b43c522dd700045.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для PS5 God of War: Ragnarok
+                        </div>
+                        <div class="product_card-text">
+                            Отправляйтесь в эпическое и душевное путешествие, во время которого Кратос и Атрей должны научиться прощать и не падать духом.
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        110
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        2640
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(14)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product_card" data-tag="game" data-price="97">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_new">
+                                <span>
+                                    Новинка
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/535/560_280_140cd750bba9870f18aada2478b24840a/5357f07bde823be57998bbfeb757cb65.jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="https://static.re-store.ru/upload/resize_cache/iblock/fe4/560_280_140cd750bba9870f18aada2478b24840a/fe44f7856cd0f3e6cfcedd45e8041fd0.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для Sony PS5 Resident Evil Village
+                        </div>
+                        <div class="product_card-text">
+                            Попробуйте выжить в кошмаре, равного которому еще не было
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        97
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        2328
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(15)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product_card" data-tag="console" data-price="1015">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_new" style="background-color: red;">
+                                <span>
+                                    <i class="fa fa-bolt" aria-hidden="true" style="margin-right: 4px;"></i> Горячая новинка
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="img/catalog/asusrogally(1).jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="img/catalog/asusrogally(2).jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игровая приставка ASUS Rog Ally (2023)
+                        </div>
+                        <div class="product_card-text">
+                            Раскройте свои возможности в играх с мощным ROG Ally 2023 - с ярким Full HD 120 Гц дисплеем, процессором AMD Ryzen Z1 Extreme и стильным дизайном
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        1015
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        24360
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(16)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="game" data-price="108">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_hit">
+                                <span><i class="fa fa-star" aria-hidden="true"></i> Хит </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="img/catalog/cyberpunk2077(1).webp">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="img/catalog/cyberpunk2077(2).jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для Xbox Series X Cyberpunk 2077
+                        </div>
+                        <div class="product_card-text">
+                            Добро пожаловать в мир Cyberpunk 2077, ролевой игры о темном мире будущего от студии CD PROJEKT RED, создавшей серию игр «Ведьмак».
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        108
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        2592
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(17)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product_card" data-tag="game" data-price="104">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_hit">
+                                <span><i class="fa fa-star" aria-hidden="true"></i> Хит </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="img/catalog/lastofus2(1).jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="img/catalog/lastofus2(2).jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для PS5 The Last of Us Part II
+                        </div>
+                        <div class="product_card-text">
+                            Прекрасный, но опасный мир The Last of Us Part II Remastered оживает на PS5. В этой версии улучшены разрешение текстур, качество теней, анимации и многое другое
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        104
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        2496
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(18)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="console" data-price="470">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_hit">
+                                <span><i class="fa fa-star" aria-hidden="true"></i> Хит </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="img/catalog/ps4(1).webp">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="img/catalog/ps4(2).jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игровая приставка Sony Playstation 4 Pro + 10 игр
+                        </div>
+                        <div class="product_card-text">
+                            Разработанная с использованием передовых технологий PlayStation 4 Pro готова предложить самый динамичный, четкий и отзывчивый игровой процесс
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        470
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        11280
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(19)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="product_card" data-tag="game" data-price="96">
+                    <div class="product_card_wrap">
+                        <div class="product_card_top">
+                            <div class="top_hit">
+                                <span><i class="fa fa-star" aria-hidden="true"></i> Хит </span>
+                            </div>
+                        </div>
+                        <div class="product_card-image">
+                            <div class="image_changable">
+                                <div class="image_base">
+                                    <img src="img/catalog/rdr2(1).jpg">
+                                </div>
+                                <div class="image_secondary">
+                                    <img src="img/catalog/rdr2(2).jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            Игра для Xbox Series X Red Dead Redemption 2
+                        </div>
+                        <div class="product_card-text">
+                            Созданная теми же авторами, что и Grand Theft Auto V и Red Dead Redemption, Red Dead Redemption 2 - это эпическая история жизни в неотступной глуши Америки
+                        </div>
+                        <div class="product_card-price">
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    День
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        96
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / сутки
+                                </div>
+                            </div>
+
+                            <div class="product_rent-time">
+                                <div class="rent-time_label">
+                                    Месяц -20%
+                                </div>
+                                <div class="rent-time_num">
+                                    от
+                                    <strong>
+                                        2304
+                                        <i class="fa fa-rub" aria-hidden="true"></i>
+                                    </strong> 
+                                    / месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product_card-bottom">
+                            <button class="bottom_btn" type="button" onclick="redirectToProductPage(20)">
+                                Арендовать
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-info">
+                <div class="box-info">
+                    <img class="footer-img" src="img/xbox-for-footer.png">
+                    <p class="footer-info-text">
+                        Исследуйте мир игр с лучшими игровыми приставками – наслаждайтесь захватывающими приключениями и непревзойденной графикой прямо у себя дома!
+                    </p>
+                    <div class="footer-social-link">
+                        <h3>Follow us</h3>
+                        <ul style="list-style: none;" class="ul-footer-links">
+                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contact-us">
+                <i class="fa fa-map-o" aria-hidden="true"></i>
+                <div class="contact-info">
+                    <h3>Москва, Россия</h3>
+                    <p>пр-кт Мичуринский, 12к2</p>
+                </div>
+            </div>
+
+            <div class="footer-call-us">
+                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+                    <p>8 (981)-551-08-23</p>
+                </div>
+            </div>
+
+            <div class="footer-useful-links">
+                <h3>Ссылки</h3>
+                <span class="animate-border border-black"></span>
+                <div class="useful-links">
+                    <ul style="list-style: none;" class="ul-useful-links">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Корзина</a></li>
+                    </ul>
+                    <ul style="list-style: none;">
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-subscribe">
+                <h3>Подпишись</h3>
+                <span class="animate-border border-black"></span>
+                <p>
+                    Подписывайся на наши новости, обновления, пополнения каталога и акции!
+                </p>
+                <div>
+                    <input type="email" class="form-control" placeholder="Email Address">
+                    <button type="submit" class="button-control">
+                        <i class="fa fa-send"></i>
+                    </button>
+                </div>
+            </div>
+        </div>  
+
+        <div class="copyright">
+
+            <div class="container-copyright">
+                <span>Copyright © 2023, Все права защищены ООО «Mareanexx»</span>
+                <ul class="ul-copyright">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
