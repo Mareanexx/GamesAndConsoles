@@ -203,7 +203,7 @@
 .another_product_card {
     padding: 10px;
     width: 275px;
-    height: 540px;
+    height: fit-content;
 }
 
 .another_product_card:hover {
@@ -278,9 +278,10 @@
 }
 
 .another_image_base img, .another_image_secondary img {
-    height: auto;
+	max-width: fit-content;
+    height: 100%;
     max-height: 178px;
-    width: auto;
+    width: 100%;
 }
 
 .another_image_base {
@@ -375,6 +376,7 @@
 }
 
 button.another_bottom_btn {
+	margin-top: 40px;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 8px;
