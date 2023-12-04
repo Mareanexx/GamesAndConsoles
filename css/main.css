@@ -208,14 +208,14 @@ h1, h2, h3, h4, h5, h6 {
 	background: transparent;
 	justify-content: flex-end;
 	align-items: center;
-	z-index: 100;
+	z-index: 4;
 }
 
 
 .navbar a {
     text-transform: uppercase;
     letter-spacing: 1.3px;
-    z-index: 10;
+    z-index: 4;
 	position: relative;
 	font-family: 'Montserrat';
 	font-size: 14px;
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a::before {
-    z-index: 10;
+    z-index: 4;
 	content: '';
 	position: absolute;
 	top: 110%;
