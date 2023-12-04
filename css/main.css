@@ -13,21 +13,21 @@
 
 @font-face {
 	font-family: raleway-c;
-	src: url(/fonts/raleway-regular.woff2);
+	src: url(fonts/raleway-regular.woff2);
 }
 
 @font-face {
 	font-family: outfit-c;
-	src: url(/fonts/outfit-regular.woff2);
+	src: url(fonts/outfit-regular.woff2);
 }
 
 @font-face {
 	font-family: SF-display;
-	src: url(/fonts/SF-Pro-Display-Bold.otf);
+	src: url(fonts/SF-Pro-Display-Bold.otf);
 }
 @font-face {
 	font-family: SF-display-900;
-	src: url(/fonts/SF-Pro-Display-Black.otf);
+	src: url(fonts/SF-Pro-Display-Black.otf);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-	background-image: url(/img/bg.jpg);
+	background-image: url(img/bg.jpg);
 	background-size: 50px;
 	color: #fafafa;
 	font-family: raleway-c;
