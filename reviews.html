@@ -16,6 +16,8 @@
 	<!--for css styles-->
 	<link rel="stylesheet" href="css/reviewsStyle.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menuBurger.css">
+    
 	<!--GSAP lib-->
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
@@ -25,6 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     
 	<script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
+	<script src="js/menuBurger.js" defer></script>
 	<script src="js/reviewsjs.js" defer></script>
 
 	
@@ -51,6 +54,35 @@
                     <a href="cart.html">Корзина</a>
                 </nav>
             </div>                
+
+            <div class="menu-burger">
+                <span></span>
+            </div>
+            
+            <nav class="nav_menu-burger">
+                <ul class="main_menu-burger">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                </ul>
+                
+                <div class="menu-burger_about">
+                    <p>Исследуйте мир игр с лучшими игровыми приставками – наслаждайтесь захватывающими приключениями и непревзойденной графикой прямо у себя дома!</p>
+                </div>
+                    
+                <div class="menu-burger_social">
+                    <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                </div>
+                    
+                <ul class="menu-burger_sub">
+                    <li><a href="#0">Games &amp; Consoles</a></li>
+                    <li><a href="#0">Rent Now!</a></li>
+                </ul>
+            </nav>
+            
+            <div class="overlay"></div>
 
 
             <div id="large-toolbar" class="app-toolbar tall">
@@ -324,7 +356,7 @@
                 </h2>
             </div>
             
-            <p>И наконец заполните форму ниже для получения купона на скидку 25% на следующую аренду приставки. 
+            <p>И, наконец, заполните форму ниже для получения купона на скидку 25% на следующую аренду приставки. 
                 После отправки формы наши менеджеры проверят информацию на достоверность и свяжутся с Вами.
             </p>
             
@@ -408,15 +440,18 @@
     <section id="all-testimonials">
         <div class="all-testimonial-heading">
             <span>Games & Consoles</span>
-            <h1>ЧТО ГОВОРЯТ ПОЛЬЗОВАТЕЛИ</h1>
+            <h1>ВСЕ ОТЗЫВЫ</h1>
         </div>
         <div class="sorting-reviews">
             <div class="dropdown_container_buttons">
-                <button class="dropdown-filter__btn" id="sorter-btn" type="button" style="width: 206.75px;" onclick="copyArraysSort()">Сортировать</button>
+                <button class="dropdown-filter__btn" id="sorter-btn" type="button" style="width: 206.75px;" onclick="copyArraysSort()">
+                    <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+                    <span class="text_btn">Сортировать</span>
+                </button>
                 
-                <button class="dropdown-sorter__btn" id="filter-btn" type="button" style="margin-left: 40px; width: 206.75px;" onclick="copyArraysFilter()">
+                <button class="dropdown-sorter__btn" id="filter-btn" type="button" style="width: 206.75px;" onclick="copyArraysFilter()">
                     <i class="fa fa-filter" aria-hidden="true"></i>
-                    Фильтровать
+                    <span class="text_btn">Фильтровать</span>
                 </button>
             </div>
 
@@ -449,7 +484,7 @@
                 </div>
     
     
-                <div class="dropdown-filter__content" style="margin-left: 40px;">
+                <div class="dropdown-filter__content">
                     <div class="filter">   
                         <ul class="filter__list">
                             <li class="filter__item" style="margin-top: 0px !important; border-top: 2px inset rgba(0, 0, 0, 0.050);" onclick="filterBy(0)">

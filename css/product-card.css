@@ -23,13 +23,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	z-index: 100;
+	z-index: 4;
 }
 
 .container__navbar p {
     letter-spacing: 1.3px;
     text-transform: uppercase;
-    z-index: 10;
+    z-index: 4;
 	position: relative;
 	font-family: 'Montserrat';
 	font-size: 15px;
@@ -42,7 +42,7 @@
 .navbar a {
     text-transform: uppercase;
     letter-spacing: 1.3px;
-    z-index: 10;
+    z-index: 4;
 	position: relative;
 	font-family: 'Montserrat';
 	font-size: 14px;
@@ -53,7 +53,7 @@
 }
 
 .navbar a::before {
-    z-index: 10;
+    z-index: 5;
 	content: '';
 	position: absolute;
 	top: 110%;
@@ -69,8 +69,9 @@
 }
 
 .footer {
-    background-image: url(img/bg.jpg);
+    background: url("../img/MainBackground.png");
 }
+
 
 .container-footer {
     padding-top: 55px !important;
@@ -447,6 +448,7 @@ button.another_bottom_btn:hover {
 
 .product_label-new, .product_label-hit {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     padding: 4px 13px;    
@@ -463,6 +465,7 @@ button.another_bottom_btn:hover {
 
 .product_label-new span,
 .product_label-hit span {
+    text-wrap: nowrap;
     text-align: center;
     text-transform: uppercase;
     padding: 3px 0px;
@@ -919,3 +922,101 @@ button.another_bottom_btn:hover {
     opacity: 0.5;
 }
 
+
+
+@media (max-width: 1150px) {
+    .container__navbar {
+        padding: 20px 50px 20px 10px;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .navbar a {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 925px) {
+    .main_product-header h1 {
+        font-size: 30px;
+    }
+    .product_label-new span, .product_label-hit span {
+        font-size: 13px;
+    }
+    .main_product_card {
+        display: grid;
+        grid-template-columns: 55% 1fr;
+        column-gap: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main_product_card {
+        grid-template-columns: minmax(360px,700px);
+        justify-content: center;
+        justify-items: center;
+    }
+    .main_product-imgbox {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 473px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_product-imgbox {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 772px) {
+}
+
+@media (max-width: 560px) {
+    .main_product-header h1 {
+        font-size: 24px;
+    }
+    .product_label-new span, .product_label-hit span {
+        font-size: 11px;
+    }
+    .product_label-new, .product_label-hit {
+        padding: 2px 10px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main_product-header {
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .product_description-charcs {
+        display: none;
+    }
+    .product_description-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .step_bnft_text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 685px) {
+    .rent_benefits-section {
+        display:none;
+    }
+}
+
+.lSAction>a {
+    z-index: 4 !important;
+}

@@ -1,0 +1,297 @@
+
+.menu-burger {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 14px;
+    right: 20px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+body.overflow {
+    overflow: hidden;
+}
+
+.menu-burger span {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(42, 42, 42);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -1.5px;
+}
+
+.menu-burger.clicked span {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    position: absolute;
+    top: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+.menu-burger.clicked span::after {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.menu-burger.clicked span::before {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-burger span::before, .menu-burger span::after {
+    position: absolute;
+    content: "";
+}
+
+.menu-burger span::before {
+    top: -9px;
+}
+
+.menu-burger span::after {
+    top: 9px;
+}
+
+.menu-burger span, .menu-burger span::before, .menu-burger span::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    outline: transparent solid 1px;
+    transition-duration: 0.3s;
+}
+
+.menu-burger.clicked span::before, .menu-burger.clicked span::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-burger:hover {
+    cursor: pointer;
+}
+
+.nav_menu-burger {
+    background-color: rgb(42, 42, 42);
+    position: fixed;
+    z-index: 9;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    max-width: 515px;
+    width: 100%;
+    padding: 100px 40px 60px;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+}
+
+.nav_menu-burger.show .menu-burger_about, .nav_menu-burger.show .menu-burger_social, .nav_menu-burger.show ul.menu-burger_sub {
+    transform: translateY(0px);
+    opacity: 1;
+    transition-delay: 0.85s;
+}
+
+.nav_menu-burger.show {
+    transform: translateX(0px);
+}
+
+@media (min-width: 667px) {
+    .nav_menu-burger {
+        padding: 120px 90px 70px;
+    }
+}
+
+ul.main_menu-burger {
+    list-style-type: none;
+}
+
+.nav_menu-burger.show ul.main_menu-burger li {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+ul.main_menu-burger li {
+    color: white;
+    margin-bottom: 10px;
+    transform: translateX(40px);
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+ul.main_menu-burger li:last-of-type {
+    margin-bottom: 0px;
+}
+
+.nav_menu-burger.show ul.main_menu-burger li:nth-child(1) {
+    transition-delay: 0.15s;
+}
+
+.nav_menu-burger.show ul.main_menu-burger li:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.nav_menu-burger.show ul.main_menu-burger li:nth-child(3) {
+    transition-delay: 0.45s;
+}
+
+.nav_menu-burger.show ul.main_menu-burger li:nth-child(4) {
+    transition-delay: 0.6s;
+}
+
+ul.main_menu-burger li a {
+    color: white;
+    font-family: Montserrat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: 10px 0px;
+    transition: all 0.3s ease 0s;
+}
+
+ul.main_menu-burger li a span {
+    color: rgb(183, 172, 127);
+}
+
+ul.main_menu-burger li a:hover {
+    color: rgb(183, 172, 127);
+}
+
+.menu-burger_about {
+    margin-top: 30px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+
+.menu-burger_about p {
+    color: white;
+    font-family: Montserrat;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    line-height: 150%;
+}
+
+.menu-burger_social {
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 30px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+
+.menu-burger_social::after {
+    content: "";
+    width: 230px;
+    height: 2px;
+    background-color: rgb(183, 172, 127);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.menu-burger_social a {
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+}
+
+.menu-burger_social a i {
+    font-size: 30px;
+    color: white;
+}
+
+.menu-burger_social a:last-of-type {
+    margin-right: 0px;
+}
+
+.menu-burger_social a:hover svg path, .menu-burger_social a:hover svg circle {
+    fill: rgb(183, 172, 127);
+}
+
+.menu-burger_social a svg {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-burger_social a svg path, .menu-burger_social a svg circle {
+    fill: white;
+    transition: all 0.3s ease 0s;
+}
+
+ul.menu-burger_sub {
+    list-style-type: none;
+    margin-top: 20px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+
+ul.menu-burger_sub li {
+    margin-bottom: 10px;
+}
+
+ul.menu-burger_sub li:last-of-type {
+    margin-bottom: 0px;
+}
+
+ul.menu-burger_sub li a {
+    color: white;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+ul.menu-burger_sub li a:hover {
+    color: rgb(183, 172, 127);
+}
+
+.overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out 0s;
+    background-color: rgba(0, 0, 0, 0.59);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay.show {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+
+@media (max-width: 850px) {
+    .navbar {
+        display: none;
+    }
+
+    .container__navbar p {
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 850.1px) {
+    .menu-burger {
+        display: none;
+    }
+    .nav_menu-burger {
+        display: none;
+    }
+}

@@ -86,6 +86,9 @@ const printFullPrice = () => {
 	final_sum_block_2.textContent = `${normalizePrice(finalPrice)}`;
 };
 
+const printFullPriceOnlyFinal = () => {
+	final_sum_block_2.textContent = `${normalizePrice(finalPrice)}`;
+};
 
 function AddToFinalPrice(product) {
     let priceofProd = parseFloat(product.querySelector(".product_sum").textContent);
@@ -199,16 +202,6 @@ function setDeliveryPriceTo349() {
         block_price.textContent = "349 ₽";
         isClicked = true;
         plusFullPrice(349);
-        printFullPrice();
+        printFullPriceOnlyFinal();
     }
 }
-
-
-document.querySelectorAll('.menu-burger, .overlay').forEach(function(element) {
-    element.addEventListener('click', function() {
-        document.querySelector('.menu-burger').classList.toggle('clicked');
-        document.querySelector('.overlay').classList.toggle('show');
-        document.querySelector('.nav_menu-burger').classList.toggle('show');
-        document.querySelector('body').classList.toggle('overflow');
-    });
-});

@@ -79,7 +79,16 @@ $('.testimonials').slick({
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+          arrows:false
+        }
+      },
+      {
+        breakpoint: 750,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -87,7 +96,6 @@ $('.testimonials').slick({
           arrows:false
         }
       }
-      
     ]
   });
 

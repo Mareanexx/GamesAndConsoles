@@ -349,7 +349,7 @@ ul.menu-burger_sub li a:hover {
 }
 
 .footer {
-    background-image: url("img/bg.jpg");
+    background: url("../img/MainBackground.png");
 }
 
 .container-footer {

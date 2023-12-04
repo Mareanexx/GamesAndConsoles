@@ -16,6 +16,8 @@
 	<!--for css styles-->
 	<link rel="stylesheet" href="css/product-card.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menuBurger.css">
+    
 	<!--GSAP lib-->
 
     <!-- Подключение jQuery -->
@@ -28,6 +30,7 @@
     <!-- Подключение LightSlider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" defer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" defer></script>
+	<script src="js/menuBurger.js" defer></script>
 	<script src="js/product-card.js" defer></script>
     
 
@@ -47,6 +50,36 @@
                 <a href="cart.html">Корзина</a>
             </nav>
         </div>
+        
+        <div class="menu-burger">
+            <span></span>
+        </div>
+        
+        <nav class="nav_menu-burger">
+            <ul class="main_menu-burger">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+            </ul>
+            
+            <div class="menu-burger_about">
+                <p>Исследуйте мир игр с лучшими игровыми приставками – наслаждайтесь захватывающими приключениями и непревзойденной графикой прямо у себя дома!</p>
+            </div>
+                
+            <div class="menu-burger_social">
+                <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            </div>
+                
+            <ul class="menu-burger_sub">
+                <li><a href="#0">Games &amp; Consoles</a></li>
+                <li><a href="#0">Rent Now!</a></li>
+            </ul>
+        </nav>
+        
+        <div class="overlay"></div>
+
     </header>
 
 

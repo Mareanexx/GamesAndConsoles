@@ -48,8 +48,8 @@ img.footer-img {
 }
 
 .box-info {
+	width: 100%;
     height: fit-content;
-    width: fit-content;
 }
 
 
@@ -73,6 +73,8 @@ img.footer-img {
 }
 
 .ul-footer-links {
+	width: 100%;
+	padding-left: 0px;
     justify-content: space-evenly;
     list-style-type: none;
     display: flex;

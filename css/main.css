@@ -11,27 +11,8 @@
 	--gallery-gap: calc(var(--index) * 7.5)
 }
 
-@font-face {
-	font-family: raleway-c;
-	src: url(fonts/raleway-regular.woff2);
-}
-
-@font-face {
-	font-family: outfit-c;
-	src: url(fonts/outfit-regular.woff2);
-}
-
-@font-face {
-	font-family: SF-display;
-	src: url(fonts/SF-Pro-Display-Bold.otf);
-}
-@font-face {
-	font-family: SF-display-900;
-	src: url(fonts/SF-Pro-Display-Black.otf);
-}
-
 h1, h2, h3, h4, h5, h6 {
-	font-family: outfit-c;
+	font-family: 'Montserrat';
 }
 
 
@@ -43,11 +24,12 @@ h1, h2, h3, h4, h5, h6 {
 	will-change: transform;
 }
 
+
 .wrapper {
-	background-image: url(img/bg.jpg);
+    background: url("../img/MainBackground.png");
 	background-size: 50px;
 	color: #fafafa;
-	font-family: raleway-c;
+	font-family: 'Montserrat';
 	overflow-x: hidden;
 }
 
@@ -149,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-block__h {
 	padding-left: 42px;
-    font-family: raleway-c;
+    font-family: 'Montserrat';
 	font-size: 2rem;
 	line-height: 2.4rem;
 	color: var(--color-header);
@@ -178,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-block__h3 {
-    font-family: raleway-c;
+    font-family: 'Montserrat';
 	font-size: 1.3rem;
 	color: var(--color-header);
 	margin-top: 1rem;
@@ -273,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
       0 3px 0 #2e2e2e12, 
       0 4px 0 #2e2e2e12, 
       0 5px 0 #2626260d; */
-	font-family: outfit-c;
+	font-family: 'Montserrat';
 	margin-bottom: 48px;
 	padding-bottom: 25px;
 	font-weight: 700;
@@ -735,7 +717,7 @@ button.learn-more.new-consoles .circle {
 	text-shadow: 50px 20px 50px rgba(0, 0, 0, 0.11);
 	height: fit-content;
 	left: 0;
-	font-family: SF-display-900;
+	font-family: 'Montserrat';
 	font-size: 200px;
 	color: rgba(0, 0, 0, 0.7);
 	font-weight: 800;
@@ -773,7 +755,7 @@ img.asusrogally-img {
 	text-align: center;
 	position: relative;
 	font-size: 60px;
-	font-family: SF-display;
+	font-family: 'Montserrat';
 	color:rgba(22, 22, 22, 0.726);
 }
 
@@ -796,7 +778,7 @@ img.asusrogally-img {
 	line-height: 23px;
 	margin-top: 30px;
 	margin-right: 20px;
-	font-family: SF-display;
+	font-family: 'Montserrat';
 	color:rgba(0, 0, 0, 0.5);
 }
 
@@ -808,7 +790,7 @@ img.asusrogally-img {
 }
 
 .btn-learn-more {
-	font-family: SF-display;
+	font-family: 'Montserrat';
 	letter-spacing: 2px;
 	font-size: 20px;
 	color: rgba(255,255,255,0.8);
@@ -880,7 +862,7 @@ img.asusrogally-img {
 	text-shadow: 50px 20px 50px rgba(0, 0, 0, 0.11);
 	height: fit-content;
 	text-align: right;
-	font-family: SF-display-900;
+	font-family: 'Montserrat';
 	font-size: 200px;
 	color: rgba(0, 0, 0, 0.7);
 	font-weight: 800;
@@ -924,7 +906,7 @@ img.steamdeck-img {
 
 .text-new-console,.text-new-console2 {
 	color:rgba(0, 0, 0, 0.7);
-	font-family: SF-display-900;
+	font-family: 'Montserrat';
 	font-size: 50px;
 }
 
