@@ -282,7 +282,7 @@ button.button-control {
 	
 	.footer-contact-us {
 		max-height: 50px;
-		margin-top: 10px;
+		margin-top: 20px;
 	}
 	.footer-call-us {
 		max-height: 50px;
@@ -291,10 +291,6 @@ button.button-control {
 
 	.footer-useful-links {
 		margin-top: 15px;
-	}
-
-	img.footer-img {
-		display: none;
 	}
 
 	.footer-info {
@@ -353,8 +349,8 @@ button.button-control {
 	.container-footer {
 		margin: 0px 20px 0px 20px;
 		grid-template-columns: 1fr;
-		grid-template-rows: 0.8fr 0.3fr 0.3fr 1fr 1fr;
-		grid-template-areas: 
+		grid-template-rows: 0.8fr 0.3fr 0.3fr 0.9fr 0.9fr;
+		grid-template-areas:
 			"logo-follow"
 			"our-place"
 			"call-us"
