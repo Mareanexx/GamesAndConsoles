@@ -48,23 +48,23 @@ if (ScrollTrigger.isTouch !== 1) {
 		})
 	})
 
-	// gsap.fromTo('.container-steam-deck', { x: 450 }, {
-	// 	x: 0,
-	// 	scrollTrigger: {
-	// 		trigger: '.container-steam-deck',
-	// 		start: '-2250',
-	// 		end: '-700',
-	// 		scrub: true
-	// 	}
-	// })
+	gsap.fromTo('.container-steam-deck', { x: 450 }, {
+		x: 0,
+		scrollTrigger: {
+			trigger: '.container-steam-deck',
+			start: '-2250',
+			end: '-700',
+			scrub: true
+		}
+	})
 
-	// gsap.fromTo('.container-asus-rogally', { x: -450 }, {
-	// 	x: 0,
-	// 	scrollTrigger: {
-	// 		trigger: '.container-asus-rogally',
-	// 		start: '-1850',
-	// 		end: '300',
-	// 		scrub: true
-	// 	}
-	// })
+	gsap.fromTo('.container-asus-rogally', { x: -450 }, {
+		x: 0,
+		scrollTrigger: {
+			trigger: '.container-asus-rogally',
+			start: '-1850',
+			end: '300',
+			scrub: true
+		}
+	})
 }
