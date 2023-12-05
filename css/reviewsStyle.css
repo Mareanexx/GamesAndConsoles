@@ -1135,7 +1135,7 @@ span.show_more_btn {
     margin: 0 0 20px;
     font-family: 'Montserrat';
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 24px;
 }
 
@@ -1612,5 +1612,8 @@ button.leavefeedback_sbm_btn {
     }
     .reviews-rate {
         font-size: 14px;
+    }
+    .leavefeedback_step p {
+        line-height: 17px;
     }
 }
