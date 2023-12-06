@@ -73,6 +73,7 @@ body {
 
 
 .small-title {
+    cursor: pointer;
 	top: 1.5px;
     margin-left: 14px;
     opacity: 0;
@@ -737,6 +738,7 @@ p.time-ofreview {
     font-size: 0.8rem;
 }
 .reviews {
+    text-wrap: nowrap;
     font-size: 18px;
     justify-self: right;
     color: #f9d71c;
@@ -1224,6 +1226,15 @@ textarea.check_field {
 
 .inputbox.inputbox--check {
     color: #848484;
+}
+
+.container_stars {
+    padding: 10px;
+}
+
+.container_stars i {
+    color: black;
+    font-size: 25px;
 }
 
 .inputbox.inputbox--check label {

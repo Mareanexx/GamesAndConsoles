@@ -27,6 +27,7 @@
 }
 
 .container__navbar p {
+    cursor: pointer;
     letter-spacing: 1.3px;
     text-transform: uppercase;
     z-index: 4;
@@ -242,7 +243,7 @@
 }
 
 .top_hit {
-    background-color: #fe643a;;
+    background-color: #983cfe;
 }
 
 .top_new span,
