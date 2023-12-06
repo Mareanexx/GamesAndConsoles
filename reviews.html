@@ -46,7 +46,7 @@
 
         <div class="header-content">
             <div class="container__navbar">
-                <div id="small-title" class="small-title">Отзывы покупателей</div>
+                <div id="small-title" class="small-title" onclick="window.location.href='index.html'">Отзывы покупателей</div>
                 <nav class="navbar">
                     <a href="index.html">Главная</a>
                     <a href="reviews.html">Отзывы покупателей</a>
@@ -370,15 +370,15 @@
                                     <label>номер заказа<strong>*</strong></label>
                                 
                                     <div class="inputbox__field">
-                                        <input class="inputbox__input add_field need_field check_field" name="order_id" type="text" value="">
+                                        <input class="inputbox__input add_field need_field check_field" name="order_id" type="text" value="" required>
                                     </div>
                                 </div>
                                 
                                 <div class="inputbox">
-                                    <label>ФИО<strong>*</strong></label>
+                                    <label>Имя<strong>*</strong></label>
                                 
                                     <div class="inputbox__field">
-                                        <input class="inputbox__input add_field need_field check_field" name="fio" type="text" value="">
+                                        <input class="inputbox__input add_field need_field check_field" name="fio" type="text" value="" required>
                                     </div>
                                 </div>
                             </div>
@@ -389,12 +389,12 @@
                                     </label>
                                 
                                     <div class="inputbox__field">
-                                        <input class="inputbox__input add_field js-input-tel need_field check_field" name="phone" type="tel" value="" placeholder="+7(___) ___-__-__" inputmode="text">
+                                        <input class="inputbox__input add_field js-input-tel need_field check_field" name="phone" type="tel" value="" placeholder="+7(___) ___-__-__" inputmode="text" required>
                                     </div>
                                 </div>
                                 
                                 <div class="inputbox">
-                                    <label>e-mail<strong>*</strong></label>
+                                    <label>e-mail</label>
                                 
                                     <div class="inputbox__field">
                                         <input class="inputbox__input add_field js-input-email need_field check_field" name="mail" type="email" value="">
@@ -405,10 +405,22 @@
                         
                         <div class="leavefeedback_form-message">
                             <div class="inputbox">
-                                <label>Ваш отзыв</label>
+                                <label>Ваша оценка<strong>*</strong></label>
+                                <div class="inputbox__field">     
+                                    <div class="container_stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <label>Ваш отзыв<strong>*</strong></label>
                             
                                 <div class="inputbox__field">
-                                    <textarea class="inputbox__input add_field check_field" name="message" placeholder="Текст отзыва"></textarea>
+                                    <textarea class="inputbox__input add_field check_field" name="message" placeholder="Текст отзыва" required></textarea>
                                 </div>
                             </div>
                             
@@ -418,7 +430,7 @@
                             
                             <div class="inputbox inputbox--check">
                                 <label>
-                                    <input checked="checked" class="checkstyle add_field need_field check_field" name="agree" type="checkbox">
+                                    <input checked="checked" class="checkstyle add_field need_field check_field" name="agree" type="checkbox" required>
                                     <span>Я согласен с условиями</a></span> 
                                 </label>
                             </div>
