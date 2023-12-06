@@ -206,27 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 
-  // Функция обрезки текста
-  function truncate(str, maxlength) {
-      if (str.length > maxlength) {
-          return str.slice(0, maxlength - 1) + "...";
-      } else {
-          return str;
-      }
-  }
 
-  // Функция для сокращения текста при загрузке страницы
-  function TruncEverytime() {
-      let client_comment_blocks = document.querySelectorAll(".client-comment");
-
-      client_comment_blocks.forEach(function(client_comment_block) {
-          let paragraph = client_comment_block.querySelector(".client-comment-p");
-          let origText = paragraph.textContent.trim();
-          paragraph.setAttribute("data-original-text", origText);
-          let truncatedText = truncate(origText, 288);
-          paragraph.textContent = truncatedText;
-      });
-  }
 
   // Вызываем сокращение текста при загрузке страницы
   TruncEverytime();
@@ -235,8 +215,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+  // Функция для сокращения текста при загрузке страницы
+function TruncEverytime() {
+    let client_comment_blocks = document.querySelectorAll(".client-comment");
+
+    client_comment_blocks.forEach(function(client_comment_block) {
+        let paragraph = client_comment_block.querySelector(".client-comment-p");
+        let origText = paragraph.textContent.trim();
+        paragraph.setAttribute("data-original-text", origText);
+        let truncatedText = truncate(origText, 288);
+        paragraph.textContent = truncatedText;
+    });
+}
 
 
+  // Функция обрезки текста
+function truncate(str, maxlength) {
+    if (str.length > maxlength) {
+        return str.slice(0, maxlength - 1) + "...";
+    } else {
+        return str;
+    }
+}
 
 //Начало кода на фильтрацию по выбору пользователя
 var defaultArrayFilter = document.querySelectorAll('.testimonial-box');
@@ -489,3 +489,144 @@ function OpenListofSorters() {
 //Конец кода на открытие/закрытие панели "Сортировка" по нажатию на кнопку
 
 
+//Начало кода на добавление нового отзыва
+const generateNewReview = (name, text, date, numOfStars) => {
+  return `            
+  <div class="testimonial-box">
+    <div class="box-top">
+        <div class="profile">
+            <div class="profile-img">
+                <img src="img/user-icons/user-icon2.png" />
+            </div>
+            <div class="name-user">
+                <strong>${name}</strong>
+                <span>@${name}</span>
+            </div>
+        </div>
+        <div class="reviews">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <span class="reviews-rate">
+                <span class="numberoffilter">${numOfStars}</span>/5
+            </span>
+        </div>
+    </div>
+    <div class="client-comment">
+        <p class="client-comment-p">
+          ${text}
+        </p>
+        <span class="show_more_btn">... показать еще</span>
+    </div>
+    <div class="block-like-dislike" style="margin-top: 15px;">
+        <div class="time">
+            <p class="time-ofreview">
+                ${date}
+            </p>
+        </div>
+        <div class="like-dislike">
+            <div class="like">
+                <i id="like-tag" class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <p class="count_of_likes">0</p>
+            </div>
+            <div class="dislike">
+                <i id="dislike-tag" class="fa fa-thumbs-down" aria-hidden="true"></i>
+                <p class="count_of_dislikes">0</p>
+            </div>
+        </div>
+    </div>
+  </div>`;
+};
+
+
+const months = [
+  'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+  'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+];
+
+const currentDate = new Date();
+const day = currentDate.getDate();
+const monthIndex = currentDate.getMonth();
+const year = currentDate.getFullYear();
+
+const formattedDate = day + ' ' + months[monthIndex] + ', ' + year;
+let fioValue;
+let messageValue;
+
+let testimonialBoxContainer = document.querySelector(".testimonial-box-container");
+
+
+function AddNewReview() {
+  // Получение значения из поля ввода type="text"
+  let stars = document.querySelectorAll(".container_stars i");
+  fioValue = document.querySelector('input[name="fio"]').value;
+  // Получение значения из текстовой области textarea
+  messageValue = document.querySelector('textarea[name="message"]').value;
+
+  let counter = 0;
+  for (let i = 0; i < stars.length; i++) {
+    if (stars[i].style.color == "rgb(249, 215, 28)") {
+      counter++;
+    }
+  }
+
+  testimonialBoxContainer.insertAdjacentHTML('afterbegin', generateNewReview(fioValue, messageValue, formattedDate, counter));
+  let starsToSet = testimonialBoxContainer.querySelector(".testimonial-box").querySelectorAll(".reviews i");
+  for (let i = 0; i < counter; i++) {
+    starsToSet[i].style.color = "#f9d71c";
+  }
+  for (let i = counter; i < 5; i++) {
+    starsToSet[i].classList.remove("fa-star");
+    starsToSet[i].classList.add("fa-star-o"); 
+  }
+  for (let i = 0; i < 5; i++) {
+    stars[i].style.color = "black";
+  }
+}
+
+// Находим форму по её ID
+const form = document.getElementById('review_check_form');
+const inputElements = form.getElementsByTagName('input');
+const textareaElement = document.querySelector('textarea.inputbox__input');
+
+// Функция для отправки данных формы
+function submitForm(event) {
+  event.preventDefault(); // Предотвращаем стандартное поведение отправки формы
+  AddNewReview();
+  
+  for (let i = 0; i < inputElements.length; i++) {
+    inputElements[i].value = ''; // Устанавливаем значение в пустую строку
+  }
+  textareaElement.value = '';
+  TruncEverytime();
+  updateLikeDislike();
+}
+
+
+// Добавляем обработчик события отправки формы
+form.addEventListener('submit', submitForm);
+
+//Конец кода на добавление нового отзыва
+
+
+
+//Начало кода на создание звезд
+
+var stars = document.querySelectorAll(".container_stars i");
+// Проходим по каждой звезде
+stars.forEach(function(star, index) {
+  // Добавляем слушатель события "click"
+  star.addEventListener("click", function() {
+    // Проходим по каждой звезде и перекрашиваем ее в черный цвет
+    stars.forEach(function(star, starIndex) {
+      star.style.color = "black";
+    });
+
+    // Перекрашиваем только выбранную звезду и все предыдущие в желтый цвет
+    for (var i = 0; i <= index; i++) {
+      stars[i].style.color = "#f9d71c";
+    }
+  });
+});

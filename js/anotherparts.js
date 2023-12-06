@@ -3,8 +3,9 @@
 $(".custom-carousel").owlCarousel({
     autoWidth: true,
     loop: true
-  });
-  $(document).ready(function () {
+});
+
+$(document).ready(function () {
     $(".custom-carousel .item").click(function () {
       $(".custom-carousel .item").not($(this)).removeClass("active");
       $(this).toggleClass("active");
@@ -136,3 +137,7 @@ function ShowSteam() {
   }
 }
 
+
+function redirectToCatalog() {
+  window.location.href = 'catalog.html';
+}
