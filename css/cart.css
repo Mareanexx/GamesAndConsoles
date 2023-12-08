@@ -341,7 +341,7 @@ ul.menu-burger_sub li a:hover {
     transition: all 0.3s ease 0s;
 }
 
-.navbar a:nth-child(4)::before {
+.navbar a:nth-child(3)::before {
     width: 100%;
 }
 

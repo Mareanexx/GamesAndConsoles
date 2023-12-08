@@ -8,7 +8,7 @@ body {
     background: url("../img/MainBackground.png") cover no-repeat;
 }
 
-.navbar a:nth-child(2):before {
+.navbar a:nth-child(4):before {
 	width: 100%;
 }
 

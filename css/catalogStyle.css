@@ -131,7 +131,7 @@
 	transition: .3s;
 }
 
-.navbar a:nth-child(3):before {
+.navbar a:nth-child(2):before {
 	width: 100%;
 }
 
