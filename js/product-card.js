@@ -68,10 +68,10 @@ const productsDatabase = [
     {
         id: 2,
         title: 'Игра для PS5 Sony PS5 MARVEL Spider-Man 2',
-        imageURL_1: 'https://static.re-store.ru/upload/resize_cache/iblock/b5c/560_280_140cd750bba9870f18aada2478b24840a/543k3pa9wbf75f84qne93c1uq75erbjf.jpg',
-        imageURL_2: 'https://static.re-store.ru/upload/resize_cache/iblock/d7c/560_280_140cd750bba9870f18aada2478b24840a/xvh8ao2ubjzcne3at6j3jpg86c2bm23x.jpg',
+        imageURL_1: 'https://ir-3.ozone.ru/s3/multimedia-i/wc1000/6849318654.jpg',
+        imageURL_2: 'https://w.forfun.com/fetch/cc/cc9b4bbe6e157d70c44683827369014d.jpeg',
         imageURL_3: 'https://cybersport.metaratings.ru/storage/images/fb/a6/fba62b97adecee79fa345f04495699d1.jpg',
-        imageURL_4: 'https://w.forfun.com/fetch/cc/cc9b4bbe6e157d70c44683827369014d.jpeg',
+        imageURL_4: 'https://gamegpu.com/images/04.23/marvel-spider-man-2.jpg',
         productLabel: 
         `<div class="product_label-new">
             <span>
@@ -343,8 +343,8 @@ const productsDatabase = [
     {
         id: 6,
         title: 'Игра для Sony PS5 Stray',
-        imageURL_1: 'https://static.re-store.ru/upload/resize_cache/iblock/57b/560_280_140cd750bba9870f18aada2478b24840a/o6f8yl9zqba5r1561bil2c07ahkfyqg7.jpg',
-        imageURL_2: 'https://static.re-store.ru/upload/resize_cache/iblock/c4c/560_280_140cd750bba9870f18aada2478b24840a/1cj8jh7mgivhcft7k9nenslffflr7kja.jpg',
+        imageURL_1: 'https://cyborg33.ru/wp-content/uploads/2023/06/d0b4d0b8d181d0ba-ps5-stray-d0bdd0bed0b2d18bd0b9-rus-2.jpg',
+        imageURL_2: 'https://gamepult.net/upload/iblock/0e5/0e52de2780217fad5d7ed224c2867703.jpg',
         imageURL_3: 'https://cybersport.metaratings.ru/storage/images/2f/4b/2f4be4e64c6b5adf7176a799b6b4391a.jpg',
         productLabel: 
         `<div class="product_label-new">
@@ -404,8 +404,8 @@ const productsDatabase = [
     {
         id: 7,
         title: 'Игра для PS5 Mortal Combat 1',
-        imageURL_1: 'https://static.re-store.ru/upload/resize_cache/iblock/680/560_280_140cd750bba9870f18aada2478b24840a/a4lt486qniquuls10j39dhpum7w8a3dj.jpg',
-        imageURL_2: 'https://static.re-store.ru/upload/resize_cache/iblock/eeb/560_280_140cd750bba9870f18aada2478b24840a/05b37vj4gsy05supzz6qjyli7vsoq83t.jpg',
+        imageURL_1: 'https://avatars.mds.yandex.net/get-mpic/12261762/2a0000018c228f0b9cd59ec1454e76b99421/600x800',
+        imageURL_2: 'https://avatars.mds.yandex.net/get-mpic/11401947/2a0000018b664a6fdb249b274b1c05e774f8/optimize',
         productLabel: 
         `<div class="product_label-new">
             <span>
@@ -467,8 +467,8 @@ const productsDatabase = [
     {
         id: 8,
         title: 'Игра для Nintendo Switch Super Mario Odyssey',
-        imageURL_1: 'https://static.re-store.ru/upload/resize_cache/iblock/314/560_280_140cd750bba9870f18aada2478b24840a/7g2rh160l7bw9seb57ua0946mqjqek7k.jpg',
-        imageURL_2: 'https://static.re-store.ru/upload/resize_cache/iblock/1d6/560_280_140cd750bba9870f18aada2478b24840a/jhkvwnsj09uc3u909r9mwvtc4ugyieil.jpg',
+        imageURL_1: 'https://img.mvideo.ru/Pdb/40066697b.jpg',
+        imageURL_2: 'https://img.mvideo.ru/Pdb/40066697b2.jpg',
         productLabel: 
         `<div class="product_label-new">
             <span>
@@ -1383,7 +1383,7 @@ $(document).ready(function(){
     });
 });
 
-const inValidProductIDs = [2, 6, 7, 8, 9, 10, 11, 13, 14, 15];
+const inValidProductIDs = [2, 7, 8, 9, 10, 11, 13, 14, 15];
 
 if (selectedProduct && inValidProductIDs.includes(selectedProduct.id)) {
     let elemToChange = document.querySelector(".product_slider_imgs img");
@@ -1539,17 +1539,14 @@ function EnableDisableBtn() {
 
 
 //Добавление элемента в локальное хранилище
-
 const ProductObjecttoPut = {
-    id: selectedProduct.id,
-    price: selectedProduct.rateSumFor1Day,
-    title: selectedProduct.title,
-    imgURL: selectedProduct.imageURL_1,
-    date_begin: '',
-    date_end: ''
+    id: selectedProduct.id, 
+    price: selectedProduct.rateSumFor1Day, //цена товара
+    title: selectedProduct.title, //название
+    imgURL: selectedProduct.imageURL_1, //ссылка на картинку
+    date_begin: '', //дата начала аренды
+    date_end: '' //дата конца аренды
 };
-
-
 
 rent_btn.addEventListener("click", putInLocalStorage);
 
